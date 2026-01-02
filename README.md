@@ -38,6 +38,7 @@ The framework simulates a full game environment including destructible crates, p
 2.  **Install dependencies**
     ```bash
     pip install -r requirements.txt
+    
     ```
 
 ### Running a Match
@@ -45,3 +46,18 @@ To watch the agent play against reference agents, run:
 
 ```bash
 python main.py play --agents deep_quapsel rule_based_agent coin_collector_agent
+```
+
+## Training
+
+To train the agent (disable the GUI for faster performance):
+
+```bash
+python main.py train --agents deep_quapsel --no-gui
+```
+
+### 📊 Performance
+
+You can analyze the agent's training progress and decision-making metrics using the provided Jupyter Notebook:
+
+* Open `agent_code/deep_quapsel/train_eval.ipynb` to visualize loss convergence and reward statistics.
